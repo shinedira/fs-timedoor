@@ -64,5 +64,19 @@
             </tr>
         <?php endforeach ?>
     </table>
+
+    <table border="1" style="margin-top: 10px;">
+        <tr>
+            <td>Name</td>
+            <td>Score</td>
+        </tr>
+
+        <?php for($i=0; $i < count($students); $i++): ?>
+            <tr >
+                <td><?= $students[$i]['name'] ?></td>
+                <td><?= $students[$i]['score'] ?></td>
+            </tr>
+        <?php endfor ?>
+    </table>
 </body>
 </html>
